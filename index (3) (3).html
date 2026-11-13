@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#062f4a">
+<title>O Grande Mergulho da Cecília • 10 anos</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+:root{
+ --navy:#062f4a;--ocean:#075b78;--lagoon:#0c91a0;--aqua:#70ded0;
+ --foam:#f1fffb;--pearl:#fff9ed;--coral:#ff987f;--gold:#f5d79a;
+ --ink:#153e50;--muted:#64808b;--line:#d9eeea;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eaf8f5;color:var(--ink);font-family:'DM Sans',sans-serif}
+a{color:inherit}
+.hero{
+ min-height:780px;position:relative;overflow:hidden;color:#fff;text-align:center;
+ background:
+ radial-gradient(ellipse at 50% 108%,#61d8c4 0%,transparent 42%),
+ radial-gradient(ellipse at 12% 72%,#168ba0 0%,transparent 45%),
+ radial-gradient(ellipse at 88% 45%,#0c7692 0%,transparent 40%),
+ linear-gradient(160deg,#041f39 0%,#063e5d 44%,#087f96 100%);
+}
+.hero:before,.hero:after{content:"";position:absolute;inset:0;pointer-events:none}
+.hero:before{opacity:.2;background-image:radial-gradient(#c8fff4 1px,transparent 1.5px);background-size:54px 54px;mask-image:linear-gradient(transparent,#000 35%,transparent)}
+.hero:after{background:linear-gradient(180deg,transparent 68%,#eaf8f5 100%)}
+.nav{position:relative;z-index:5;max-width:1100px;margin:auto;padding:26px 28px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#d5fff5}
+.brand span{font-size:1.2rem;margin-right:9px}
+.nav a{font-size:.82rem;text-decoration:none;border:1px solid #ffffff65;border-radius:99px;padding:11px 18px;background:#ffffff10;backdrop-filter:blur(8px)}
+.hero-copy{position:relative;z-index:3;max-width:850px;margin:64px auto 0;padding:0 22px}
+.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.32em;text-transform:uppercase;color:#a9f5e8}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(4.4rem,12vw,9rem);line-height:.82;letter-spacing:-.065em;margin:25px 0 0;text-shadow:0 8px 32px #001c3266}
+h1 em{font-style:normal;display:block;color:var(--gold);font-size:.39em;letter-spacing:.19em;margin-top:28px;text-transform:uppercase}
+.hero-sub{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.15rem,3vw,1.55rem);font-style:italic;color:#e2fff9;margin:31px auto 26px;max-width:620px;line-height:1.5}
+.hero-date{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border:1px solid #c6fff080;background:#ffffff12;border-radius:99px;font-weight:700;font-size:.88rem;backdrop-filter:blur(8px)}
+.hero-date b{color:var(--gold)}
+.art{position:absolute;z-index:2;pointer-events:none}
+.turtle-art{width:min(310px,38vw);left:4%;bottom:67px;filter:drop-shadow(0 16px 18px #002d3c55);transform:rotate(-9deg)}
+.fish-art{width:min(180px,24vw);right:7%;top:38%;filter:drop-shadow(0 12px 16px #002d3c55)}
+.seaweed{position:absolute;bottom:0;z-index:2;width:160px;height:260px;opacity:.72}
+.seaweed.left{left:0}.seaweed.right{right:0;transform:scaleX(-1)}
+.bubble{position:absolute;border:1px solid #d5fff78c;border-radius:50%;background:linear-gradient(135deg,#ffffff35,#ffffff03);box-shadow:inset 3px 3px 8px #fff3;animation:rise 9s ease-in-out infinite}
+.b1{width:22px;height:22px;left:18%;top:30%}.b2{width:40px;height:40px;right:19%;top:18%;animation-delay:2s}.b3{width:12px;height:12px;left:72%;top:59%;animation-delay:4s}.b4{width:28px;height:28px;left:42%;top:17%;animation-delay:1s}
+@keyframes rise{50%{transform:translateY(-28px)}}
+main{position:relative;z-index:4;max-width:1020px;margin:-24px auto 0;padding:0 22px 76px}
+.panel{background:#fff;border:1px solid #ffffff;border-radius:30px;box-shadow:0 22px 65px #0c53651a;margin-bottom:25px;padding:clamp(26px,5vw,54px)}
+.welcome{text-align:center}
+.seal{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;margin:-4px auto 18px;background:linear-gradient(145deg,#e2fff6,#b9eee4);box-shadow:0 8px 22px #3ba99b30;font-size:2.35rem}
+.overline{font-size:.68rem;letter-spacing:.23em;text-transform:uppercase;font-weight:800;color:#2b9b99}
+h2{font-family:'Playfair Display',Georgia,serif;color:var(--navy);font-size:clamp(2rem,5vw,3rem);line-height:1.1;margin:10px 0 14px}
+.welcome p{max-width:680px;margin:0 auto;color:#587681;line-height:1.85;font-size:1.02rem}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:34px}
+.info{border-radius:19px;padding:20px 12px;background:linear-gradient(145deg,#f3fffb,#e9f8f4);border:1px solid #e1f2ed}
+.info .icon{font-size:1.55rem}.info strong{display:block;color:var(--navy);font-size:.92rem;margin:9px 0 4px}.info small{color:#718b93;font-size:.83rem}
+.divider{display:flex;align-items:center;gap:14px;color:#8bb9b0;margin:28px auto 0;max-width:440px;font-size:1.1rem}
+.divider:before,.divider:after{content:"";height:1px;background:#dcefe9;flex:1}
+.rsvp{background:linear-gradient(150deg,#fff 0%,#fafffd 100%)}
+.heading{text-align:center;margin-bottom:30px}
+.heading p{color:var(--muted);margin:0;line-height:1.6}
+.form-wrap{max-width:690px;margin:auto}
+label{display:block;font-weight:800;color:#17445a;font-size:.88rem;margin:0 0 9px}
+.field{margin:0 0 20px}
+input,select,textarea{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:15px 16px;font:inherit;font-size:.96rem;color:var(--ink);background:#fbfffe;outline:none;transition:.2s}
+input::placeholder,textarea::placeholder{color:#9bb1b5}
+input:focus,select:focus,textarea:focus{border-color:#42bdb1;box-shadow:0 0 0 4px #70ded02b;background:white}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2364808b' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hint{font-size:.78rem;color:#81999e;margin-top:8px}
+.submit{width:100%;border:0;border-radius:15px;padding:17px 22px;background:linear-gradient(100deg,#08768d,#16a89e);color:white;font:inherit;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:0 10px 24px #087e8c30;transition:.2s}
+.submit:hover{transform:translateY(-2px);box-shadow:0 14px 28px #087e8c40}
+#feedback{display:none;margin-top:18px;padding:18px;border:1px solid #c6eadc;border-radius:15px;background:#effbf4;color:#176044;line-height:1.65}
+.privacy{font-size:.78rem;color:#80979d;text-align:center;line-height:1.6;margin:19px auto 0;max-width:570px}
+.footer{position:relative;text-align:center;background:linear-gradient(145deg,#052c47,#075d70);color:#d9fff6;padding:48px 20px 38px;overflow:hidden}
+.footer .shells{font-size:1.8rem;letter-spacing:.3em;margin-bottom:14px}
+.footer strong{font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;color:#ffe5b4}
+.footer p{font-size:.83rem;color:#a9dcd5;margin:9px 0 0}
+@media(max-width:650px){
+ .hero{min-height:735px}.nav{padding:20px 18px}.brand{font-size:.64rem;letter-spacing:.12em}.nav a{font-size:.72rem;padding:9px 12px}
+ .hero-copy{margin-top:83px}.turtle-art{width:175px;left:-17px;bottom:43px}.fish-art{width:105px;right:1%;top:53%}
+ .seaweed{width:100px;height:180px}.info-grid{grid-template-columns:1fr;gap:9px}.info{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px}.info strong{margin:0 0 3px}.info .icon{font-size:1.45rem}.row{grid-template-columns:1fr;gap:0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <nav class="nav"><div class="brand"><span>✧</span> Convite especial</div><a href="#confirmar">Confirmar presença&nbsp; ↗</a></nav>
+ <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span><span class="bubble b4"></span>
+ <div class="hero-copy">
+  <div class="eyebrow">Uma aventura mágica no fundo do mar</div>
+  <h1>Cecília<em>10 anos</em></h1>
+  <p class="hero-sub">O oceano está em festa… e falta você para completar essa aventura!</p>
+  <div class="hero-date"><span>🐚</span> Uma celebração cheia de encanto <b>•</b> <span>🐠</span></div>
+ </div>
+ <svg class="art turtle-art" viewBox="0 0 320 240" aria-label="Ilustração de tartaruga marinha">
+  <defs><linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a8e7c4"/><stop offset=".55" stop-color="#43b99f"/><stop offset="1" stop-color="#187f7d"/></linearGradient><linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7f3c9"/><stop offset="1" stop-color="#60c9b0"/></linearGradient></defs>
+  <g stroke="#176d70" stroke-width="4" stroke-linejoin="round">
+   <path d="M103 84Q72 48 48 59Q42 83 91 113L105 126Z" fill="url(#skin)"/>
+   <path d="M206 83Q247 42 267 62Q270 91 218 119L204 127Z" fill="url(#skin)"/>
+   <path d="M105 151Q67 171 77 204Q103 217 135 166Z" fill="url(#skin)"/>
+   <path d="M205 151Q247 171 238 204Q211 218 177 166Z" fill="url(#skin)"/>
+   <path d="M148 50Q167 24 186 47L180 78Z" fill="url(#skin)"/>
+   <ellipse cx="157" cy="122" rx="82" ry="66" fill="url(#shell)"/>
+   <path d="M157 58L157 186M91 122H223M112 76L157 122L203 76M111 168L157 122L204 168" fill="none" stroke="#d4f2c8" stroke-width="3" opacity=".8"/>
+   <path d="M215 116Q253 92 273 110Q292 127 275 147Q255 164 219 143Z" fill="url(#skin)"/>
+   <circle cx="267" cy="119" r="3.8" fill="#123b50" stroke="none"/>
+   <path d="M266 139q-8 7-16 0" fill="none" stroke="#176d70" stroke-width="2.5"/>
+  </g>
+  <path d="M239 105q10-10 18-4" fill="none" stroke="#e9fff0" stroke-width="4" stroke-linecap="round"/>
+ </svg>
+ <svg class="art fish-art" viewBox="0 0 190 130" aria-label="Peixinho tropical">
+  <defs><linearGradient id="fish" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd99c"/><stop offset="1" stop-color="#ff987f"/></linearGradient></defs>
+  <path d="M40 65Q92 5 151 65Q92 125 40 65Z" fill="url(#fish)" stroke="#ffcf9c" stroke-width="3"/>
+  <path d="M44 65L8 35Q15 65 8 95Z" fill="#f7c77e" stroke="#ffcf9c" stroke-width="3"/>
+  <path d="M88 27Q105 4 120 27M88 103Q105 126 120 103" fill="#f8b98d" stroke="#ffcf9c" stroke-width="2"/>
+  <circle cx="132" cy="57" r="5" fill="#173b4d"/><circle cx="134" cy="55" r="1.6" fill="white"/>
+  <path d="M145 73q-8 7-15 0" fill="none" stroke="#a95851" stroke-width="2" stroke-linecap="round"/>
+ </svg>
+ <svg class="seaweed left" viewBox="0 0 160 260" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#43c9a9" stroke-width="12" stroke-linecap="round"><path d="M15 270Q-4 180 35 125Q55 90 37 30"/><path d="M58 270Q94 190 72 130Q59 95 92 58"/><path d="M100 270Q72 206 118 157Q145 125 133 82"/></g></svg>
+ <svg class="seaweed right" viewBox="0 0 160 260" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#43c9a9" stroke-width="12" stroke-linecap="round"><path d="M15 270Q-4 180 35 125Q55 90 37 30"/><path d="M58 270Q94 190 72 130Q59 95 92 58"/><path d="M100 270Q72 206 118 157Q145 125 133 82"/></g></svg>
+</header>
+<main>
+ <section class="panel welcome">
+  <div class="seal">🐢</div>
+  <div class="overline">Você é nosso convidado especial</div>
+  <h2>Vamos mergulhar<br>nessa comemoração?</h2>
+  <p>Prepare-se para explorar um mundo encantado! A Cecília vai completar <strong>10 anos</strong> e quer dividir esse dia tão especial com pessoas queridas. Venha celebrar com a gente em uma festa repleta de alegria, cores, criaturas marinhas e momentos inesquecíveis!</p>
+  <div class="info-grid">
+   <div class="info"><span class="icon">📅</span><div><strong>Data da festa</strong><small>17/11/2026</small></div></div>
+   <div class="info"><span class="icon">⏰</span><div><strong>Horário</strong><small>16h00</small></div></div>
+   <div class="info"><span class="icon">📍</span><div><strong>Onde vai ser?</strong><small>R. Casa do Ator, 584<br>Vila Olímpia • São Paulo/SP</small></div></div>
+  </div>
+  <div class="divider">✧ 🐚 ✧</div>
+ </section>
+ <section class="panel rsvp" id="confirmar">
+  <div class="heading"><div class="overline">Sua presença deixa tudo mais especial</div><h2>Confirme sua presença</h2><p>Preencha os campos abaixo para reservar seu lugar<br>nessa aventura submarina.</p></div>
+  <div class="form-wrap">
+   <form id="rsvp">
+    <div class="field"><label for="nome">Nome do participante responsável</label><input id="nome" name="nome" autocomplete="name" placeholder="Digite seu nome completo" required></div>
+    <div class="row">
+     <div class="field"><label for="quantidade">Quantidade de participantes</label><select id="quantidade" name="quantidade" required><option value="" disabled selected>Selecione</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+     <div class="field"><label for="codigo">Código do convite</label><input id="codigo" name="codigo" placeholder="Ex.: CECI10-AB12" required></div>
+    </div>
+    <div class="field"><label for="acompanhantes">Nome dos acompanhantes</label><textarea id="acompanhantes" name="acompanhantes" rows="3" placeholder="Escreva o nome de cada acompanhante"></textarea><div class="hint">Se não houver acompanhantes, deixe este campo em branco.</div></div>
+    <div class="field"><label for="recado">Deixe um carinho para a Cecília <span style="font-weight:500;color:#8ba0a3">(opcional)</span></label><input id="recado" name="recado" placeholder="Uma mensagem especial 💌"></div>
+    <button class="submit" type="submit">🐠 &nbsp; Enviar minha confirmação</button>
+    <div id="feedback" role="status" aria-live="polite"></div>
+   </form>
+   <p class="privacy">Os dados preenchidos serão usados para organizar a comemoração. Ao confirmar, aparecerá um resumo nesta página; para que a família receba as respostas, é preciso conectar o formulário a um serviço de RSVP.</p>
+  </div>
+ </section>
+</main>
+<footer class="footer"><div class="shells">✧ 🐚 🪸 🐢 ✧</div><strong>O melhor presente é ter você por perto!</strong><p>Com carinho, Cecília 💙</p></footer>
+<script>
+document.getElementById('rsvp').addEventListener('submit',function(e){
+ e.preventDefault();
+ const get=id=>document.getElementById(id).value.trim();
+ const nome=get('nome'),qtd=get('quantidade'),codigo=get('codigo'),acomp=get('acompanhantes'),recado=get('recado');
+ const safe=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const box=document.getElementById('feedback');box.style.display='block';
+ box.innerHTML='<strong>🐢 Que alegria! Sua confirmação foi preenchida.</strong><br>Responsável: '+safe(nome)+'<br>Participantes: '+safe(qtd)+'<br>Código do convite: '+safe(codigo)+(acomp?'<br>Acompanhantes: '+safe(acomp).replace(/\n/g,'<br>'):'')+(recado?'<br>Recado: '+safe(recado):'')+'<br><br><small>Este é apenas um resumo local: os dados ainda não foram enviados à família.</small>';
+ box.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+</script>
+</body>
+</html>
